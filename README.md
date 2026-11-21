@@ -1,6 +1,6 @@
 # 棱镜 Prism 发行下载
 
-本仓库仅托管 Prism 安装包、签名业务资源包、更新清单与发行说明；产品源码仓及历史保持私有。
+本仓库托管 Prism 安装包、签名业务资源包、更新清单与发行说明。可构建源码和研究复现说明见 [棱镜开源仓库](https://github.com/Sssovereign/prism-agent-open)。
 
 当前测试版为 [0.2.0-beta](https://github.com/Sssovereign/prism-agent-releases/releases/tag/v0.2.0-beta)
 
@@ -14,4 +14,4 @@
 
 581 项产品测试和 70 项桌面测试通过。macOS 已验证带数据升级，双平台安装包已通过完整性检查。macOS 尚未公证，Windows 安装包未配置 Authenticode 签名。
 
-安装后无需另装 Node 或 pnpm。账号、模型配置、历史和凭据保存在本机。发行物包含可提取的编译后 JavaScript，公开下载不表示整个工程已开源，也不新增整个工程的开源许可；第三方许可随安装包保留。
+安装后无需另装 Node 或 pnpm。账号、模型配置、历史和凭据保存在本机。第三方许可随安装包保留。开源源码的许可与适用范围见 [源码仓库](https://github.com/Sssovereign/prism-agent-open#许可)。
