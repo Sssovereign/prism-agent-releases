@@ -1,17 +1,15 @@
-# 棱镜 Prism 发行下载
+# 棱镜 Prism 发行下载（迁移公告）
 
-本仓库托管 Prism 安装包、签名业务资源包、更新清单与发行说明。可构建源码和研究复现说明见 [棱镜开源仓库](https://github.com/Sssovereign/prism-agent-open)。
+**新版本发布已迁移**：自 0.2.2-beta 起，源码与安装包合并到 [棱镜开源仓库](https://github.com/Sssovereign/prism-agent-open) 发布——源码 tag 与安装包 Release 同仓同号。请到 [开源仓库 Releases](https://github.com/Sssovereign/prism-agent-open/releases) 获取最新版本。
 
-当前测试版为 [0.2.1-beta](https://github.com/Sssovereign/prism-agent-releases/releases/tag/v0.2.1-beta)
+- 当前最新：[棱镜 Prism 0.2.2-beta](https://github.com/Sssovereign/prism-agent-open/releases/tag/v0.2.2-beta)
+- [macOS Apple Silicon 安装包](https://github.com/Sssovereign/prism-agent-open/releases/download/v0.2.2-beta/Prism-0.2.2-beta-mac-arm64.dmg)
+- [Windows x64 安装包](https://github.com/Sssovereign/prism-agent-open/releases/download/v0.2.2-beta/Prism-Setup-0.2.2-beta-win-x64.exe)
 
-- [macOS Apple Silicon 安装包](https://github.com/Sssovereign/prism-agent-releases/releases/download/v0.2.1-beta/Prism-0.2.1-beta-mac-arm64.dmg)
-- [Windows x64 安装包](https://github.com/Sssovereign/prism-agent-releases/releases/download/v0.2.1-beta/Prism-Setup-0.2.1-beta-win-x64.exe)
-- [发行说明与已知限制](https://github.com/Sssovereign/prism-agent-releases/releases/tag/v0.2.1-beta) · [历史版本](https://github.com/Sssovereign/prism-agent-releases/releases)
+## 关于本仓库
 
-0.2.1-beta 让辩论与评审参与者共享任务助手的按需读取能力：可自行查看项目文件、图片材料、技能与项目规则，创建时可附图片并按角色模型预检。新研究任务卡分层呈现稳定规则、角色职责与输出契约，历史发言以限量摘要进入上下文、全文按需读取；整场预算默认放大到 240 次模型请求、480 次工具请求、90 分钟，匹配按需读取的真实消耗。
+本仓库为历史发行档案，所有旧版本（0.0.5-beta 起）的发行与附件**永久保留**，历史安装包下载不受影响。
 
-旧版本请退出棱镜后使用完整安装包覆盖安装。macOS 使用 DMG，Windows 使用 EXE。Windows 实机覆盖安装、自动重启和原生目录选择仍待验证。
+0.2.2-beta 是**过渡发行**：0.2.1-beta 及更早客户端的应用内更新源编译指向本仓库，它们通过应用内更新发现的最后一个版本就是 0.2.2-beta；更新到 0.2.2 后，后续更新检查自动转向开源仓库。0.2.2-beta 的完整附件（安装包、签名业务包、清单与校验和）在本仓库与开源仓库同步提供，摘要一致。
 
-617 项产品测试和 70 项桌面测试通过，隔离构建与 mac 打包冒烟通过。双平台安装包与业务更新包已通过完整性检查；四身份更新源发现验证通过（0.2.0 实测发现 0.2.1 完整安装，0.2.1 显示已是最新）。macOS 尚未公证，Windows 安装包未配置 Authenticode 签名。
-
-安装后无需另装 Node 或 pnpm。账号、模型配置、历史和凭据保存在本机。第三方许可随安装包保留。开源源码的许可与适用范围见 [源码仓库](https://github.com/Sssovereign/prism-agent-open#许可)。
+旧版本（0.2.1 及更早）若不使用应用内更新，也可直接从开源仓库下载完整安装包覆盖安装：macOS 使用 DMG，Windows 使用安装向导。
